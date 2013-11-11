@@ -6,7 +6,7 @@ TestApp::Application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
-  resources :microposts
+  resources :microposts, only: [:create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
 

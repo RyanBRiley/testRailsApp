@@ -33,4 +33,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 
 gem 'debugger', group: [:development, :test]
+
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 end
